@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .bg-dark{position: absolute;top: 0;left: 0;width: 100vw;height: 100dvh;display: flex;justify-content: center;align-items: center;background-color: rgb(0,0,0,.5);}
-body{margin: 0;font-family: "Montserrat", sans-serif;font-optical-sizing: auto;font-weight: <weight>;font-style: normal;}
+body{margin: 0;font-family: "Montserrat", sans-serif;font-optical-sizing: auto;}
 header{position: relative;color: white;}
 header h2{max-width: 60vw;overflow: hidden;}
 header img{height: 100lvh;width: 100%;object-fit: cover;filter: brightness(50%);}
