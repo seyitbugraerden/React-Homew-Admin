@@ -1,23 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "../../App.css";
 import { useSelector } from "react-redux";
 
 function Header() {
-  const data = useSelector((state) => state.admin.data);
-  const [navItems, setNavItems] = useState([]);
-
-  useEffect(() => {
-    axios
-      .get(
-        "https://f1-adminpage-default-rtdb.europe-west1.firebasedatabase.app/Header/Nav.json"
-      )
-      .then((response) => {
-        const items = Object.values(response.data);
-        setNavItems(items);
-      });
-  }, []);
+  const navItem = useSelector((state) => state.admin.navbarItems);
 
   return (
     <div
@@ -29,7 +16,6 @@ function Header() {
       role="banner"
       className="navigation w-nav"
     >
-      {data}
       <div className="navigation-wrap">
         <Link
           to="/"
@@ -45,7 +31,7 @@ function Header() {
         </Link>
         <div className="menu">
           <nav role="navigation" className="navigation-items w-nav-menu">
-            {navItems.map((item, index) => (
+            {navItem.map((item, index) => (
               <Link
                 to={item.toLowerCase()}
                 className="navigation-item w-nav-link"

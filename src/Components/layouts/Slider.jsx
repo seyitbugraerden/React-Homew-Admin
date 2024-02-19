@@ -1,13 +1,16 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Slider() {
+  const imgSrc = useSelector((state) => state.admin.sliderImg);
+  const title = useSelector((state) => state.admin.sliderTitle);
+  const desc = useSelector((state) => state.admin.sliderDesc);
   return (
     <div className="section cc-store-home-wrap">
       <div
         className="intro-header"
         style={{
-          backgroundImage:
-            "linear-gradient(transparent, rgb(0,0,0,.5)), url(https://img3.aksam.com.tr/imgsdisk/2021/04/26/t25_formula-1de-yeni-donem-sp-955.jpg)",
+          backgroundImage: `linear-gradient(transparent, rgb(0,0,0,.5)), url(${imgSrc})`,
           backgroundPosition: "center",
           color: "white",
           backgroundSize: "cover",
@@ -18,10 +21,9 @@ function Slider() {
       >
         <div className="intro-content cc-homepage">
           <div className="intro-text">
-            <div className="heading-jumbo">Race Day Insights</div>
+            <div className="heading-jumbo">{title}</div>
             <div className="paragraph-bigger cc-bigger-white-light">
-              Get behind-the-scenes analysis and expert commentary on the latest
-              F1 races.
+              {desc}
               <br />
             </div>
           </div>
