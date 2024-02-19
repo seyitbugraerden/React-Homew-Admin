@@ -47,6 +47,7 @@ const initialState = {
   subs: {
     title: "F1 Insider Access: Your Ticket to Exclusive Race Updates",
     desc: "Subscribe now to unlock premium notifications and in-depth race insights. Get ahead of the curve with insider access to all the action on and off the track!",
+    subButton: "SUBSCRIBE NOW",
   },
 };
 

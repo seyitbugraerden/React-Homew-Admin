@@ -34,7 +34,7 @@ function Footer() {
                 href="/contact"
                 className="button cc-jumbo-button w-inline-block"
               >
-                <div>Subscribe Now</div>
+                <div>{subs.subButton}</div>
               </a>
             </div>
           </div>
