@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 import "../../App.css";
 
 function Header() {
+  const [navItems, setNavItems] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(
+        "https://f1-adminpage-default-rtdb.europe-west1.firebasedatabase.app/Header/Nav.json"
+      )
+      .then((response) => {
+        const items = Object.values(response.data);
+        setNavItems(items);
+      });
+  }, []);
+
   return (
     <div
       data-collapse="medium"
@@ -28,21 +42,15 @@ function Header() {
         </Link>
         <div className="menu">
           <nav role="navigation" className="navigation-items w-nav-menu">
-            <Link to="/about" className="navigation-item w-nav-link">
-              About
-            </Link>
-            <Link to="/projects" className="navigation-item w-nav-link">
-              Work
-            </Link>
-            <Link to="/team" className="navigation-item w-nav-link">
-              team
-            </Link>
-            <Link to="/blog" className="navigation-item w-nav-link">
-              Blog
-            </Link>
-            <Link to="/contact" className="navigation-item w-nav-link">
-              Contact
-            </Link>
+            {navItems.map((item, index) => (
+              <Link
+                to={item}
+                className="navigation-item w-nav-link"
+                key={index}
+              >
+                {item}
+              </Link>
+            ))}
           </nav>
           <div className="menu-button w-nav-button">
             <img
