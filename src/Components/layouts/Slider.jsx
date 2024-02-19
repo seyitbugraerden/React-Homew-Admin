@@ -8,9 +8,12 @@ function Slider() {
         style={{
           backgroundImage:
             "linear-gradient(transparent, rgb(0,0,0,.5)), url(https://img3.aksam.com.tr/imgsdisk/2021/04/26/t25_formula-1de-yeni-donem-sp-955.jpg)",
-          backgroundAttachment: "fixed",
-          backgroundPositionY: "-150px",
+          backgroundPosition: "center",
+          color: "white",
           backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundOrigin: "center",
+          backgroundAttachment: "fixed",
         }}
       >
         <div className="intro-content cc-homepage">
