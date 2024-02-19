@@ -20,7 +20,7 @@ function Header() {
           className="logo-link w-nav-brand w--current"
         >
           <img
-            src="https://assets-global.website-files.com/65d25ec9405b7cdf530bfabd/65d25ec9405b7cdf530bfb1b_business-logo%402x.png"
+            src="https://cdn-3.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg"
             width="108"
             alt=""
             className="logo-image"
