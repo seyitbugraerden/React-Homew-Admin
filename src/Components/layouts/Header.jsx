@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "../../App.css";
+import { useSelector } from "react-redux";
 
 function Header() {
+  const data = useSelector((state) => state.admin.data);
   const [navItems, setNavItems] = useState([]);
 
   useEffect(() => {
@@ -27,6 +29,7 @@ function Header() {
       role="banner"
       className="navigation w-nav"
     >
+      {data}
       <div className="navigation-wrap">
         <Link
           to="/"
