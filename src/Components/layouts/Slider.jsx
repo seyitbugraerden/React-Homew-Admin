@@ -2,15 +2,13 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function Slider() {
-  const imgSrc = useSelector((state) => state.admin.sliderImg);
-  const title = useSelector((state) => state.admin.sliderTitle);
-  const desc = useSelector((state) => state.admin.sliderDesc);
+  const slider = useSelector((state) => state.admin.slider);
   return (
     <div className="section cc-store-home-wrap">
       <div
         className="intro-header"
         style={{
-          backgroundImage: `linear-gradient(transparent, rgb(0,0,0,.5)), url(${imgSrc})`,
+          backgroundImage: `linear-gradient(transparent, rgb(0,0,0,.5)), url(${slider.img})`,
           backgroundPosition: "center",
           color: "white",
           backgroundSize: "cover",
@@ -21,9 +19,9 @@ function Slider() {
       >
         <div className="intro-content cc-homepage">
           <div className="intro-text">
-            <div className="heading-jumbo">{title}</div>
+            <div className="heading-jumbo">{slider.title}</div>
             <div className="paragraph-bigger cc-bigger-white-light">
-              {desc}
+              {slider.desc}
               <br />
             </div>
           </div>
