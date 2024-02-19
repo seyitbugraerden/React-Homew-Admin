@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 
 function Slider() {
   const slider = useSelector((state) => state.admin.slider);
+  const main = useSelector((state) => state.admin.main);
   return (
     <div className="section cc-store-home-wrap">
       <div
@@ -35,9 +36,9 @@ function Slider() {
       </div>
       <div className="container">
         <div className="motto-wrap">
-          <div className="label cc-light">Who is Here</div>
+          <div className="label cc-light">{main.mutedTitle}</div>
           <div className="heading-jumbo-small">
-            Brand Spotlight: Powerhouses of the Circuit
+            {main.title}
             <br />
           </div>
         </div>
@@ -46,23 +47,16 @@ function Slider() {
           <div className="w-layout-grid about-grid">
             <div id="w-node-_86e64837-0616-515b-4568-76c147234d34-530bfaf3">
               <div className="home-section-wrap">
-                <div className="label cc-light">Most Winner</div>
-                <h2 className="section-heading">Mercedes-AMG</h2>
-                <p className="paragraph-light">
-                  Mercedes-AMG Petronas Formula One Team is a powerhouse in
-                  Formula 1, renowned for its dominance in the sport's modern
-                  era. With cutting-edge technology, top-tier engineering, and a
-                  roster of world-class drivers, Mercedes-AMG consistently
-                  pushes the boundaries of speed and innovation on the race
-                  track.
-                </p>
+                <div className="label cc-light">{main.partOne.mutedTitle}</div>
+                <h2 className="section-heading">{main.partOne.title}</h2>
+                <p className="paragraph-light">{main.partOne.desc}</p>
               </div>
               <a href="/about" className="button w-inline-block">
                 <div>Learn More</div>
               </a>
             </div>
             <img
-              src="https://i.pinimg.com/originals/e1/1c/c8/e11cc8ad8bff2641e0076ad00e4beb98.jpg"
+              src={main.partOne.img}
               id="w-node-_86e64837-0616-515b-4568-76c147234d3f-530bfaf3"
               alt=""
             />
@@ -70,22 +64,16 @@ function Slider() {
           <div className="w-layout-grid about-grid cc-about-2">
             <div id="w-node-_86e64837-0616-515b-4568-76c147234d41-530bfaf3">
               <div className="home-section-wrap">
-                <div className="label cc-light">Most Popular</div>
-                <h2 className="section-heading">Scuderia Ferrari</h2>
-                <p className="paragraph-light">
-                  Ferrari is an iconic name in Formula 1, synonymous with
-                  passion, tradition, and success. With a storied history
-                  spanning decades, the Scuderia Ferrari team continues to
-                  captivate fans worldwide with its distinctive red cars and
-                  unwavering pursuit of victory on the race track.
-                </p>
+                <div className="label cc-light">{main.partSec.mutedTitle}</div>
+                <h2 className="section-heading">{main.partSec.title}</h2>
+                <p className="paragraph-light">{main.partSec.desc}</p>
               </div>
               <a href="/team" className="button w-inline-block">
                 <div>Learn More</div>
               </a>
             </div>
             <img
-              src="https://www.mostlyf1.com/wp-content/uploads/2019/09/Charles-Leclerc-Italy-2019-Podium.jpg"
+              src={main.partSec.img}
               id="w-node-_86e64837-0616-515b-4568-76c147234d4c-530bfaf3"
               alt=""
             />
