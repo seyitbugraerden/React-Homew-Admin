@@ -5,8 +5,8 @@ function News() {
     <div class="section">
       <div class="container">
         <div class="blog-heading">
-          <div class="label cc-light">About Us</div>
-          <h2 class="work-heading">Company news</h2>
+          <div class="label cc-light">News</div>
+          <h2 class="work-heading">Latest News</h2>
         </div>
         <div class="collection-list-wrapper w-dyn-list">
           <div role="list" class="collection-wrap w-dyn-items">
@@ -15,16 +15,14 @@ function News() {
                 href="/post/10-quick-tips-about-blogging"
                 class="business-article-heading"
               >
-                10 Quick Tips About Blogging
+                New Regulations Unveiled for 2024 Season
               </a>
-              <div class="label cc-blog-date">Feb 21, 2019</div>
+              <div class="label cc-blog-date">Jan 24, 2024</div>
               <p class="paragraph-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                tristique posuere.
+                F1 governing body, the FIA, has revealed significant changes to
+                the technical regulations for the 2024 season, aiming to improve
+                racing and reduce costs. These alterations include tweaks to
+                aerodynamics, standardized parts, and sustainability measures.
               </p>
             </div>
             <div role="listitem" class="blog-preview-wrap w-dyn-item">
@@ -32,16 +30,15 @@ function News() {
                 href="/post/15-best-blogs-to-follow-about-web-design"
                 class="business-article-heading"
               >
-                15 Best Blogs To Follow About Web Design
+                Driver Transfers Shake Up Grid
               </a>
-              <div class="label cc-blog-date">Feb 21, 2019</div>
+              <div class="label cc-blog-date">Jan 21, 2024</div>
               <p class="paragraph-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                tristique posuere.
+                Several high-profile driver transfers have occurred ahead of the
+                2024 season, with notable moves including Lewis Hamilton's
+                switch to Aston Martin and Max Verstappen joining Ferrari. These
+                changes promise to add excitement and unpredictability to the
+                upcoming championship.
               </p>
             </div>
             <div role="listitem" class="blog-preview-wrap w-dyn-item">
@@ -49,16 +46,14 @@ function News() {
                 href="/post/7-of-the-best-examples-of-beautiful-blog-design"
                 class="business-article-heading"
               >
-                7 of the Best Examples of Beautiful Blog Design
+                Expansion Plans for F1 Calendar
               </a>
-              <div class="label cc-blog-date">Feb 21, 2019</div>
+              <div class="label cc-blog-date">Jan 21, 2024</div>
               <p class="paragraph-light">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Aenean faucibus nibh et justo
-                cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-                tristique posuere.
+                Formula 1 is exploring new venues and markets for its race
+                calendar, with discussions underway to potentially add races in
+                countries like Indonesia and Qatar. These expansion plans aim to
+                broaden the sport's global footprint and attract new fans.
               </p>
             </div>
           </div>
