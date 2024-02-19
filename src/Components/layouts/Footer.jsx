@@ -1,6 +1,8 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Footer() {
+  const subs = useSelector((state) => state.admin.subs);
   return (
     <>
       <div
@@ -20,13 +22,11 @@ function Footer() {
             <div>
               <div className="cta-text">
                 <div className="heading-jumbo-small">
-                  F1 Insider Access: Your Ticket to Exclusive Race Updates
+                  {subs.title}
                   <br />
                 </div>
                 <div className="paragraph-bigger cc-bigger-light">
-                  Subscribe now to unlock premium notifications and in-depth
-                  race insights. Get ahead of the curve with insider access to
-                  all the action on and off the track!
+                  {subs.desc}
                   <br />
                 </div>
               </div>

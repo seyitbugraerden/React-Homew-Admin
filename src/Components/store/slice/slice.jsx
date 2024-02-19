@@ -23,6 +23,29 @@ const initialState = {
       img: "https://www.mostlyf1.com/wp-content/uploads/2019/09/Charles-Leclerc-Italy-2019-Podium.jpg",
     },
   },
+  news: {
+    mutedTitle: "NEWS",
+    title: "Latest News",
+    blogOne: {
+      title: "New Regulations Unveiled for 2024 Season",
+      date: "JAN 24, 2024",
+      desc: "F1 governing body, the FIA, has revealed significant changes to the technical regulations for the 2024 season, aiming to improve racing and reduce costs. These alterations include tweaks to aerodynamics, standardized parts, and sustainability measures.",
+    },
+    blogSec: {
+      title: "Driver Transfers Shake Up Grid",
+      date: "JAN 21, 2024",
+      desc: "Several high-profile driver transfers have occurred ahead of the 2024 season, with notable moves including Lewis Hamilton's switch to Aston Martin and Max Verstappen joining Ferrari. These changes promise to add excitement and unpredictability to the upcoming championship.",
+    },
+    blogThr: {
+      title: "Expansion Plans for F1 Calendar",
+      date: "JAN 21, 2024",
+      desc: "Formula 1 is exploring new venues and markets for its race calendar, with discussions underway to potentially add races in countries like Indonesia and Qatar. These expansion plans aim to broaden the sport's global footprint and attract new fans.",
+    },
+  },
+  subs: {
+    title: "F1 Insider Access: Your Ticket to Exclusive Race Updates",
+    desc: "Subscribe now to unlock premium notifications and in-depth race insights. Get ahead of the curve with insider access to all the action on and off the track!",
+  },
 };
 
 const adminSlice = createSlice({
