@@ -12,6 +12,8 @@ function Footer() {
           backgroundPositionY: "-400px",
           color: "white",
           backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundOrigin: "center",
         }}
       >
         <div className="container">
