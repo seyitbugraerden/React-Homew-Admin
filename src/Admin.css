@@ -1,0 +1,9 @@
+.admin{display: flex;flex-direction: row;}
+.admin-nav{width:100%;color: white;display: flex;flex-direction: column;gap: 60px;background-color: #ececec;}
+.admin-nav .admin-nav-area{display: flex;justify-content: space-between;align-items: center;background-color: black;padding: 10px 40px;}
+.admin-scroll{width: 0px;transition: 600ms;overflow: hidden;background-color: #1C2260;height: 100dvh !important;color: white;}
+.admin-scroll.active{padding-left: 20px;width: 300px;}
+.avatar-nav{width: 0px;transition: 600ms;overflow: hidden;background-color: #1C2260;height: 100dvh !important;color: white;}
+.avatar-nav.active{padding:0px 20px;width: 300px;}
+.admin-nav .Carts{display: flex;flex-direction: row;color: black;justify-content: space-around;align-items: center;flex-wrap: wrap;row-gap: 40px;}
+.admin-nav .Carts .card{background-color: #b5b5b5;padding: 30px 20px;min-width: 25vw;display: flex;align-items: start;flex-direction: column;gap: 10px;}
