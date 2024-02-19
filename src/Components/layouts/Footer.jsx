@@ -9,7 +9,6 @@ function Footer() {
           backgroundImage:
             "linear-gradient(rgb(0,0,0,.5), rgb(0,0,0,.5)),url(https://wallpapercave.com/wp/wp9200426.jpg)",
           backgroundPosition: "center",
-          backgroundPositionY: "-400px",
           color: "white",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
