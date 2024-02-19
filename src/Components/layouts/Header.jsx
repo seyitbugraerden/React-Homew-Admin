@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "../../App.css";
 
 function Header() {
@@ -14,8 +14,8 @@ function Header() {
       className="navigation w-nav"
     >
       <div className="navigation-wrap">
-        <a
-          href="/"
+        <Link
+          to="/"
           aria-current="page"
           className="logo-link w-nav-brand w--current"
         >
@@ -25,24 +25,24 @@ function Header() {
             alt=""
             className="logo-image"
           />
-        </a>
+        </Link>
         <div className="menu">
           <nav role="navigation" className="navigation-items w-nav-menu">
-            <a href="/about" className="navigation-item w-nav-link">
+            <Link to="/about" className="navigation-item w-nav-link">
               About
-            </a>
-            <a href="/projects" className="navigation-item w-nav-link">
+            </Link>
+            <Link to="/projects" className="navigation-item w-nav-link">
               Work
-            </a>
-            <a href="/team" className="navigation-item w-nav-link">
+            </Link>
+            <Link to="/team" className="navigation-item w-nav-link">
               team
-            </a>
-            <a href="/blog" className="navigation-item w-nav-link">
+            </Link>
+            <Link to="/blog" className="navigation-item w-nav-link">
               Blog
-            </a>
-            <a href="/contact" className="navigation-item w-nav-link">
+            </Link>
+            <Link to="/contact" className="navigation-item w-nav-link">
               Contact
-            </a>
+            </Link>
           </nav>
           <div className="menu-button w-nav-button">
             <img
