@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import "../../Admin.css";
 import { MenuFoldOutlined } from "@ant-design/icons";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
+import "../../Admin.css";
+
 function Admin() {
   const [isClicked, setIsClicked] = useState(false);
   const [isAvatarClicked, setIsAvatarClicked] = useState(false);
+  const [value, setValue] = useState("");
+
   return (
     <>
       <div className="admin">
@@ -33,8 +36,12 @@ function Admin() {
           </div>
           <div className="Carts">
             <div className="card">
-              <div className="card-title">Lorem, ipsum.</div>
-              <strong>50%</strong>
+              <input
+                type="text"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+              />
+              <button>Change</button>{" "}
             </div>
             <div className="card">
               <div className="card-title">Lorem, ipsum.</div>
