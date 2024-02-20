@@ -38,6 +38,7 @@ function Header() {
                 to={item.toLowerCase()}
                 className="navigation-item w-nav-link"
                 key={index}
+                title={item}
               >
                 {item}
               </Link>
@@ -48,6 +49,7 @@ function Header() {
           </div>
         </div>
         <a
+          title="Mail"
           href="mailto:mail@business.com?subject=You&#x27;ve%20got%20mail!"
           className="button cc-contact-us w-inline-block"
         >

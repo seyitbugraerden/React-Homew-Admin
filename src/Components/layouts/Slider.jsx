@@ -29,6 +29,7 @@ function Slider() {
           <a
             href="/about"
             className="button cc-jumbo-button cc-jumbo-white w-inline-block"
+            title="Learn More"
           >
             <div>Learn More</div>
           </a>
@@ -51,7 +52,11 @@ function Slider() {
                 <h2 className="section-heading">{main.partOne.title}</h2>
                 <p className="paragraph-light">{main.partOne.desc}</p>
               </div>
-              <a href="/about" className="button w-inline-block">
+              <a
+                href="/about"
+                className="button w-inline-block"
+                title="Learn More"
+              >
                 <div>Learn More</div>
               </a>
             </div>
@@ -68,7 +73,11 @@ function Slider() {
                 <h2 className="section-heading">{main.partSec.title}</h2>
                 <p className="paragraph-light">{main.partSec.desc}</p>
               </div>
-              <a href="/team" className="button w-inline-block">
+              <a
+                href="/team"
+                className="button w-inline-block"
+                title="Learn More"
+              >
                 <div>Learn More</div>
               </a>
             </div>
