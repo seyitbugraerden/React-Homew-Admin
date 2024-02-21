@@ -60,6 +60,20 @@ function AdminSidebar() {
                     </li>
                   </ul>
                 </li>
+                <li className="active">
+                  <a className="has-arrow">
+                    <i className="fa fa-dashboard"></i>
+                    <span>Fixed Values</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a>Pages</a>
+                    </li>
+                    <li>
+                      <a>Mail Address</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
