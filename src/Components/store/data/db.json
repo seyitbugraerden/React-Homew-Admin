@@ -28,15 +28,15 @@
   "slider": {
     "id": "slider",
     "img": {
-      "id": "sliderImg",
+      "id": "SliderImg",
       "content": "https://img3.aksam.com.tr/imgsdisk/2021/04/26/t25_formula-1de-yeni-donem-sp-955.jpg"
     },
     "title": {
-      "id": "sliderTitle",
+      "id": "SliderTitle",
       "content": "Race Day Insights"
     },
     "desc": {
-      "id": "sliderDesc",
+      "id": "SliderDesc",
       "content": "Get behind-the-scenes analysis and expert commentary on the latest F1 races."
     }
   },

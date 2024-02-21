@@ -5,6 +5,7 @@ import AdminRightBar from "../layouts/AdminRightBar";
 import { Input } from "antd";
 import { useSelector } from "react-redux";
 import { Button, Modal } from "antd";
+import axios from "axios";
 
 function AdminHome() {
   const data = useSelector((state) => state.admin);
@@ -26,6 +27,18 @@ function AdminHome() {
   const [open, setOpen] = useState(false);
   const modalText = "Your changes will be saved";
 
+  const onOk = () => {
+    setOpen(false);
+
+    axios
+      .put("http://localhost:3000/slider", newData)
+      .then((response) => {
+        console.log("Veri güncellendi:", response.data);
+      })
+      .catch((error) => {
+        console.error("Hata:", error);
+      });
+  };
   return (
     <>
       <AdminNavbar />
@@ -171,7 +184,7 @@ function AdminHome() {
             title="Are You Sure ?"
             open={open}
             onOk={() => {
-              setOpen(false);
+              onOk();
             }}
             onCancel={() => {
               setOpen(false);
