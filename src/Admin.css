@@ -7,3 +7,5 @@
 .avatar-nav.active{padding:0px 20px;width: 300px;}
 .admin-nav .Carts{display: flex;flex-direction: row;color: black;justify-content: space-around;align-items: center;flex-wrap: wrap;row-gap: 40px;}
 .admin-nav .Carts .card{background-color: #b5b5b5;padding: 30px 20px;min-width: 25vw;display: flex;align-items: start;flex-direction: column;gap: 10px;}
+ul{list-style: none;margin-left: 0;padding-left: 0;}
+ul li{display: flex;justify-content: space-between;gap: 60px;}

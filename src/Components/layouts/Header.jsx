@@ -24,12 +24,7 @@ function Header() {
           aria-current="page"
           className="logo-link w-nav-brand w--current"
         >
-          <img
-            src="https://cdn-3.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg"
-            width="108"
-            alt=""
-            className="logo-image"
-          />
+          <img src={logo} width="108" alt="" className="logo-image" />
         </Link>
         <div className="menu">
           <nav role="navigation" className="navigation-items w-nav-menu">
@@ -45,7 +40,12 @@ function Header() {
             ))}
           </nav>
           <div className="menu-button w-nav-button">
-            <img src={logo} width="22" alt="" className="menu-icon" />
+            <img
+              src="https://assets-global.website-files.com/65d25ec9405b7cdf530bfabd/65d25ec9405b7cdf530bfb1a_menu-icon.png"
+              width="22"
+              alt=""
+              className="menu-icon"
+            />
           </div>
         </div>
         <a
