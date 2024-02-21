@@ -29,15 +29,6 @@ function AdminHome() {
 
   const onOk = () => {
     setOpen(false);
-
-    axios
-      .put("http://localhost:3000/slider", newData)
-      .then((response) => {
-        console.log("Veri güncellendi:", response.data);
-      })
-      .catch((error) => {
-        console.error("Hata:", error);
-      });
   };
   return (
     <>
@@ -173,6 +164,7 @@ function AdminHome() {
           </div>
 
           <Button
+            className="my-5"
             type="primary"
             onClick={() => {
               setOpen(true);

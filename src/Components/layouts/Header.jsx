@@ -30,7 +30,7 @@ function Header() {
           <nav role="navigation" className="navigation-items w-nav-menu">
             {navItem.map((item, index) => (
               <Link
-                to={item.content.toLowerCase()}
+                to={`/${item.content.toLowerCase()}`}
                 className="navigation-item w-nav-link"
                 key={index}
                 title={item.content}
