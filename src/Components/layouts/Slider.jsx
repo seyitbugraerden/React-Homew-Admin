@@ -9,7 +9,7 @@ function Slider() {
       <div
         className="intro-header"
         style={{
-          backgroundImage: `linear-gradient(transparent, rgb(0,0,0,.5)), url(${slider.img})`,
+          backgroundImage: `linear-gradient(transparent, rgb(0,0,0,.5)), url(${slider.img.content})`,
           backgroundPosition: "center",
           color: "white",
           backgroundSize: "cover",
@@ -20,9 +20,9 @@ function Slider() {
       >
         <div className="intro-content cc-homepage">
           <div className="intro-text">
-            <div className="heading-jumbo">{slider.title}</div>
+            <div className="heading-jumbo">{slider.title.content}</div>
             <div className="paragraph-bigger cc-bigger-white-light">
-              {slider.desc}
+              {slider.desc.content}
               <br />
             </div>
           </div>
@@ -37,9 +37,9 @@ function Slider() {
       </div>
       <div className="container">
         <div className="motto-wrap">
-          <div className="label cc-light">{main.mutedTitle}</div>
+          <div className="label cc-light">{main.mutedTitle.content}</div>
           <div className="heading-jumbo-small">
-            {main.title}
+            {main.title.content}
             <br />
           </div>
         </div>
@@ -48,9 +48,13 @@ function Slider() {
           <div className="w-layout-grid about-grid">
             <div id="w-node-_86e64837-0616-515b-4568-76c147234d34-530bfaf3">
               <div className="home-section-wrap">
-                <div className="label cc-light">{main.partOne.mutedTitle}</div>
-                <h2 className="section-heading">{main.partOne.title}</h2>
-                <p className="paragraph-light">{main.partOne.desc}</p>
+                <div className="label cc-light">
+                  {main.partOne.mutedTitle.content}
+                </div>
+                <h2 className="section-heading">
+                  {main.partOne.title.content}
+                </h2>
+                <p className="paragraph-light">{main.partOne.desc.content}</p>
               </div>
               <a
                 href="/about"
@@ -61,7 +65,7 @@ function Slider() {
               </a>
             </div>
             <img
-              src={main.partOne.img}
+              src={main.partOne.img.content}
               id="w-node-_86e64837-0616-515b-4568-76c147234d3f-530bfaf3"
               alt=""
             />
@@ -69,9 +73,13 @@ function Slider() {
           <div className="w-layout-grid about-grid cc-about-2">
             <div id="w-node-_86e64837-0616-515b-4568-76c147234d41-530bfaf3">
               <div className="home-section-wrap">
-                <div className="label cc-light">{main.partSec.mutedTitle}</div>
-                <h2 className="section-heading">{main.partSec.title}</h2>
-                <p className="paragraph-light">{main.partSec.desc}</p>
+                <div className="label cc-light">
+                  {main.partSec.mutedTitle.content}
+                </div>
+                <h2 className="section-heading">
+                  {main.partSec.title.content}
+                </h2>
+                <p className="paragraph-light">{main.partSec.desc.content}</p>
               </div>
               <a
                 href="/team"
@@ -82,7 +90,7 @@ function Slider() {
               </a>
             </div>
             <img
-              src={main.partSec.img}
+              src={main.partSec.img.content}
               id="w-node-_86e64837-0616-515b-4568-76c147234d4c-530bfaf3"
               alt=""
             />

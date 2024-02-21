@@ -22,11 +22,11 @@ function Footer() {
             <div>
               <div className="cta-text">
                 <div className="heading-jumbo-small">
-                  {subs.title}
+                  {subs.title.content}
                   <br />
                 </div>
                 <div className="paragraph-bigger cc-bigger-light">
-                  {subs.desc}
+                  {subs.desc.content}
                   <br />
                 </div>
               </div>
@@ -35,7 +35,7 @@ function Footer() {
                 className="button cc-jumbo-button w-inline-block"
                 title="footer button"
               >
-                <div>{subs.subButton}</div>
+                <div>{subs.subButton.content}</div>
               </a>
             </div>
           </div>

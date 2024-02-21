@@ -5,8 +5,8 @@ import { useSelector } from "react-redux";
 
 function Header() {
   const navItem = useSelector((state) => state.admin.navbarItems);
-  const logo = useSelector((state) => state.admin.logo);
-  const headerButton = useSelector((state) => state.admin.headerButton);
+  const logo = useSelector((state) => state.admin.logo.content);
+  const headerButton = useSelector((state) => state.admin.headerButton.content);
 
   return (
     <div
@@ -35,12 +35,12 @@ function Header() {
           <nav role="navigation" className="navigation-items w-nav-menu">
             {navItem.map((item, index) => (
               <Link
-                to={item.toLowerCase()}
+                to={item.content.toLowerCase()}
                 className="navigation-item w-nav-link"
                 key={index}
-                title={item}
+                title={item.content}
               >
-                {item}
+                {item.content}
               </Link>
             ))}
           </nav>
