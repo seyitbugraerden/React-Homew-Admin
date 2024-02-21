@@ -3,6 +3,7 @@ import { MenuFoldOutlined } from "@ant-design/icons";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
 import AdminHeader from "../layouts/AdminHeader";
+import AdminSlider from "../layouts/AdminSlider";
 import "../../Admin.css";
 
 function Admin() {
@@ -34,7 +35,8 @@ function Admin() {
               onClick={() => setIsAvatarClicked(!isAvatarClicked)}
             />
           </div>
-          <AdminHeader />
+          {/* <AdminHeader /> */}
+          <AdminSlider />
         </div>
         <div className={`avatar-nav ${isAvatarClicked ? "active" : ""}`}>
           <h2>Lorem</h2>
