@@ -2,12 +2,10 @@ import React, { useState } from "react";
 import { MenuFoldOutlined } from "@ant-design/icons";
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
-import "../../Admin.css";
-import { useSelector } from "react-redux";
 import AdminHeader from "../layouts/AdminHeader";
+import "../../Admin.css";
 
 function Admin() {
-  const data = useSelector((state) => state.admin);
   const [isClicked, setIsClicked] = useState(false);
   const [isAvatarClicked, setIsAvatarClicked] = useState(false);
 
