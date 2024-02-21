@@ -13,7 +13,7 @@ function AdminNavbar() {
           <button type="button" className="btn-toggle-offcanvas">
             <i className="fa fa-bars"></i>
           </button>
-          <a>Admin Panel</a>
+          <Link to="/admin">Admin Panel</Link>
         </div>
 
         <div className="navbar-right">

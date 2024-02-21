@@ -67,6 +67,9 @@ function AdminSidebar() {
                   </a>
                   <ul>
                     <li>
+                      <a>Brand Logo</a>
+                    </li>
+                    <li>
                       <a>Pages</a>
                     </li>
                     <li>
