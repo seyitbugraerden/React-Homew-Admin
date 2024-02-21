@@ -3,6 +3,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Components/pages/Home";
 import AdminPage from "./Components/pages/Admin";
+import AdminHome from "./Components/pages/AdminHome";
 function App() {
   return (
     <>
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<HomePage />} />
         <Route path="/admin" element={<AdminPage />} />
+        <Route path="/admin/home" element={<AdminHome />} />
       </Routes>
       {/* <SpinBox /> */}
     </>

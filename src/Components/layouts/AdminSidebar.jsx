@@ -47,7 +47,7 @@ function AdminSidebar() {
                   </a>
                   <ul>
                     <li>
-                      <a Link="/homepage">Home Page</a>
+                      <Link to="/admin/home">Home Page</Link>
                     </li>
                     <li>
                       <a>Schedule</a>
