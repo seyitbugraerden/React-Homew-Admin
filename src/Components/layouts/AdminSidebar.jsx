@@ -41,10 +41,10 @@ function AdminSidebar() {
             <nav id="left-sidebar-nav" className="sidebar-nav">
               <ul id="main-menu" className="metismenu li_animation_delay">
                 <li className="active">
-                  <a className="has-arrow">
+                  <Link to="/admin" className="has-arrow">
                     <i className="fa fa-dashboard"></i>
                     <span>Dashboard</span>
-                  </a>
+                  </Link>
                   <ul>
                     <li>
                       <Link to="/admin/home">Home Page</Link>
