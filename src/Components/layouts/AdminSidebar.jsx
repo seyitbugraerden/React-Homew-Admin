@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AdminSidebar() {
   return (
@@ -9,108 +10,53 @@ function AdminSidebar() {
       <div className="sidebar-scroll">
         <div className="user-account">
           <img
-            src="assets/images/user.png"
+            src="https://tommystinctures.com/wp-content/uploads/2020/10/avatar-icon-placeholder-1577909.jpg"
             className="rounded-circle user-photo"
             alt="User Profile Picture"
           />
-          <div className="dropdown">
-            <span>Welcome,</span>
-            <a className="dropdown-toggle user-name" data-toggle="dropdown">
-              <strong>Pamela Petrus</strong>
-            </a>
-            <ul className="dropdown-menu dropdown-menu-right account">
-              <li>
-                <a>
-                  <i className="icon-user"></i>My Profile
-                </a>
-              </li>
-              <li>
-                <a>
-                  <i className="icon-envelope-open"></i>Messages
-                </a>
-              </li>
-              <li>
-                <a>
-                  <i className="icon-settings"></i>Settings
-                </a>
-              </li>
-              <li className="divider"></li>
-              <li>
-                <a href="page-login.html">
-                  <i className="icon-power"></i>Logout
-                </a>
-              </li>
-            </ul>
-          </div>
+          <span>Welcome,</span>
+          <a className="user-name" data-toggle="dropdown">
+            <strong>Dear Admin</strong>
+          </a>
           <hr />
           <ul className="row list-unstyled">
             <li className="col-4">
-              <small>Sales</small>
-              <h6>561</h6>
+              <small>Visit</small>
+              <h6>520</h6>
             </li>
             <li className="col-4">
-              <small>Order</small>
-              <h6>920</h6>
+              <small>Online</small>
+              <h6>20</h6>
             </li>
             <li className="col-4">
-              <small>Revenue</small>
-              <h6>$23B</h6>
+              <small>Left Day</small>
+              <h6>236</h6>
             </li>
           </ul>
         </div>
-        <ul className="nav nav-tabs">
-          <li className="nav-item">
-            <a className="nav-link active" data-toggle="tab" href="#menu">
-              Menu
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" data-toggle="tab" href="#Chat">
-              <i className="icon-book-open"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" data-toggle="tab" href="#setting">
-              <i className="icon-settings"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" data-toggle="tab" href="#question">
-              <i className="icon-question"></i>
-            </a>
-          </li>
-        </ul>
+        <ul className="nav nav-tabs text-light   px-3 py-2">Edit Your Page</ul>
 
         <div className="tab-content padding-0">
           <div className="tab-pane active" id="menu">
             <nav id="left-sidebar-nav" className="sidebar-nav">
               <ul id="main-menu" className="metismenu li_animation_delay">
                 <li className="active">
-                  <a href="#Dashboard" className="has-arrow">
+                  <a className="has-arrow">
                     <i className="fa fa-dashboard"></i>
                     <span>Dashboard</span>
                   </a>
                   <ul>
                     <li>
-                      <a>Analytical</a>
+                      <a Link="/homepage">Home Page</a>
                     </li>
                     <li>
-                      <a>Analytical H-Menu</a>
+                      <a>Schedule</a>
                     </li>
                     <li>
-                      <a>IoT Dashboard</a>
-                    </li>
-                    <li className="active">
-                      <a>Demographic</a>
+                      <a>Teams</a>
                     </li>
                     <li>
-                      <a>Project Board</a>
-                    </li>
-                    <li>
-                      <a>Crypto Dashboard</a>
-                    </li>
-                    <li>
-                      <a>eCommerce</a>
+                      <a>Subscription</a>
                     </li>
                   </ul>
                 </li>
