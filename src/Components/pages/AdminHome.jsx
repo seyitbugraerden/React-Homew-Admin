@@ -29,7 +29,19 @@ function AdminHome() {
 
   const onOk = () => {
     setOpen(false);
+    const updatedData = {
+      content: "New Contact Information",
+    };
+    axios
+      .put("http://localhost:3000/headerButton/content.json", updatedData)
+      .then((response) => {
+        console.log("Veri başarıyla güncellendi:", response.data);
+      })
+      .catch((error) => {
+        console.error("Hata oluştu:", error);
+      });
   };
+
   return (
     <>
       <AdminNavbar />
