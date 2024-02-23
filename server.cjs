@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // React uygulamanızın üretim build dosyasını sunmak için bir endpoint tanımlayın
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 // Tüm istekleri React uygulamasına yönlendirin
 app.get('*', function(req, res) {
