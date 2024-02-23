@@ -8,9 +8,8 @@ function Page() {
   return (
     <>
       <Header />
-      <Footer />
-
       <h5>{id}</h5>
+      <Footer />
     </>
   );
 }
