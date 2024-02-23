@@ -7,7 +7,7 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // Tüm istekleri React uygulamasına yönlendirin
 app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 // Sunucuyu belirlediğiniz bir portta başlatın
