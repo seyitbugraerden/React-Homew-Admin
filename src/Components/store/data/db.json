@@ -1,9 +1,8 @@
 {
-  "headerButton": [
-    {
+  "headerButton": {
     "id": "headerButton",
-    "content": "Contact Us"}
-  ],
+    "content": "Contact Us"
+  },
   "navbarItems": [
     {
       "id": "Home",
