@@ -1,39 +1,27 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import AdminNavbar from "../layouts/AdminNavbar";
 import AdminSidebar from "../layouts/AdminSidebar";
 import AdminRightBar from "../layouts/AdminRightBar";
 import { Input } from "antd";
 import { useSelector } from "react-redux";
 import { Button, Modal } from "antd";
-import axios from "axios";
 
 function AdminHome() {
   const data = useSelector((state) => state.admin);
+  //Modal Area
   const [open, setOpen] = useState(false);
   const modalText = "Your changes will be saved";
-
-  const valSliderTitleRef = useRef(data.slider.title.content);
-  const valSliderDescRef = useRef(data.slider.desc.content);
-  const valMainMutedTitleRef = useRef(data.main.mutedTitle.content);
-  const valMainTitleRef = useRef(data.main.title.content);
-  const valNewsMutedTitleRef = useRef(data.news.mutedTitle.content);
-  const valNewsTitleRef = useRef(data.news.title.content);
-  const valDownTitleRef = useRef(data.subs.title.content);
-  const valDownDescRef = useRef(data.subs.desc.content);
-
+  //UseRef Area
+  const valSliderTitle = useRef(null);
+  const valSliderDesc = useRef(null);
+  const valMainMutedTitle = useRef(null);
+  const valMainTitle = useRef(null);
+  const valNewsMutedtitle = useRef(null);
+  const valNewsTitle = useRef(null);
+  const valDownTitle = useRef(null);
+  const valDownDesc = useRef(null);
   const onOk = () => {
     setOpen(false);
-    const updatedData = {
-      content: "New Contact Information",
-    };
-    axios
-      .put("http://localhost:3000/headerButton/content.json", updatedData)
-      .then((response) => {
-        console.log("Veri başarıyla güncellendi:", response.data);
-      })
-      .catch((error) => {
-        console.error("Hata oluştu:", error);
-      });
   };
 
   return (
@@ -48,7 +36,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Slider Title</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valSliderTitleRef} />
+              <Input placeholder="Enter New Value" value={valSliderTitle} />
             </div>
             <div className="col-sm-4">
               <i>{data.slider.title.content}</i>
@@ -57,7 +45,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Slider Description</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valSliderDescRef} />
+              <Input value={valSliderDesc} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-4">
               <i>{data.slider.desc.content}</i>
@@ -67,7 +55,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Main Muted Title</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valMainMutedTitleRef} />
+              <Input value={valMainMutedTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.mutedTitle.content}</i>
@@ -76,7 +64,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Main Title</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valMainTitleRef} />
+              <Input value={valMainTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.title.content}</i>
@@ -86,7 +74,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">News Muted Title</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valNewsMutedTitleRef} />
+              <Input value={valNewsMutedtitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.mutedTitle.content}</i>
@@ -95,7 +83,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">New Title</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valNewsTitleRef} />
+              <Input value={valNewsTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.title.content}</i>
@@ -105,7 +93,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Down Slide Title</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valDownTitleRef} />
+              <Input value={valDownTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.subs.title.content}</i>
@@ -114,7 +102,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Down Slide Description</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" ref={valDownDescRef} />
+              <Input value={valDownDesc} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.subs.desc.content}</i>
