@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import AdminNavbar from "../layouts/AdminNavbar";
 import AdminSidebar from "../layouts/AdminSidebar";
 import AdminRightBar from "../layouts/AdminRightBar";
@@ -9,23 +9,17 @@ import axios from "axios";
 
 function AdminHome() {
   const data = useSelector((state) => state.admin);
-  const [valSliderTitle, setValSliderTitle] = useState(
-    data.slider.title.content
-  );
-  const [valSliderDesc, setvalSliderDesc] = useState(data.slider.desc.content);
-  const [valMainMutedTitle, setvalMainMutedTitle] = useState(
-    data.main.mutedTitle.content
-  );
-  const [valMainTitle, setvalMainTitle] = useState(data.main.title.content);
-  const [valNewsMutedtitle, setValNewsMutedtitle] = useState(
-    data.news.mutedTitle.content
-  );
-  const [valNewsTitle, setValNewsTitle] = useState(data.news.title.content);
-  const [valDownTitle, setValDownTitle] = useState(data.subs.title.content);
-  const [valDownDesc, setValDownDesc] = useState(data.subs.desc.content);
-  //Modal Area
   const [open, setOpen] = useState(false);
   const modalText = "Your changes will be saved";
+
+  const valSliderTitleRef = useRef(data.slider.title.content);
+  const valSliderDescRef = useRef(data.slider.desc.content);
+  const valMainMutedTitleRef = useRef(data.main.mutedTitle.content);
+  const valMainTitleRef = useRef(data.main.title.content);
+  const valNewsMutedTitleRef = useRef(data.news.mutedTitle.content);
+  const valNewsTitleRef = useRef(data.news.title.content);
+  const valDownTitleRef = useRef(data.subs.title.content);
+  const valDownDescRef = useRef(data.subs.desc.content);
 
   const onOk = () => {
     setOpen(false);
@@ -54,13 +48,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Slider Title</div>
             <div className="col-sm-3">
-              <Input
-                placeholder="Enter New Value"
-                value={valSliderTitle}
-                onChange={(e) => {
-                  setValSliderTitle(e.target.value);
-                }}
-              />
+              <Input placeholder="Enter New Value" ref={valSliderTitleRef} />
             </div>
             <div className="col-sm-4">
               <i>{data.slider.title.content}</i>
@@ -69,13 +57,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Slider Description</div>
             <div className="col-sm-3">
-              <Input
-                value={valSliderDesc}
-                placeholder="Enter New Value"
-                onChange={(e) => {
-                  setvalSliderDesc(e.target.value);
-                }}
-              />
+              <Input placeholder="Enter New Value" ref={valSliderDescRef} />
             </div>
             <div className="col-sm-4">
               <i>{data.slider.desc.content}</i>
@@ -85,13 +67,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Main Muted Title</div>
             <div className="col-sm-3">
-              <Input
-                value={valMainMutedTitle}
-                onChange={(e) => {
-                  setvalMainMutedTitle(e.target.value);
-                }}
-                placeholder="Enter New Value"
-              />
+              <Input placeholder="Enter New Value" ref={valMainMutedTitleRef} />
             </div>
             <div className="col-sm-3">
               <i>{data.main.mutedTitle.content}</i>
@@ -100,13 +76,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Main Title</div>
             <div className="col-sm-3">
-              <Input
-                value={valMainTitle}
-                onChange={(e) => {
-                  setvalMainTitle(e.target.value);
-                }}
-                placeholder="Enter New Value"
-              />
+              <Input placeholder="Enter New Value" ref={valMainTitleRef} />
             </div>
             <div className="col-sm-3">
               <i>{data.main.title.content}</i>
@@ -116,13 +86,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">News Muted Title</div>
             <div className="col-sm-3">
-              <Input
-                value={valNewsMutedtitle}
-                onChange={(e) => {
-                  setValNewsMutedtitle(e.target.value);
-                }}
-                placeholder="Enter New Value"
-              />
+              <Input placeholder="Enter New Value" ref={valNewsMutedTitleRef} />
             </div>
             <div className="col-sm-3">
               <i>{data.main.mutedTitle.content}</i>
@@ -131,13 +95,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">New Title</div>
             <div className="col-sm-3">
-              <Input
-                value={valNewsTitle}
-                onChange={(e) => {
-                  setValNewsTitle(e.target.value);
-                }}
-                placeholder="Enter New Value"
-              />
+              <Input placeholder="Enter New Value" ref={valNewsTitleRef} />
             </div>
             <div className="col-sm-3">
               <i>{data.main.title.content}</i>
@@ -147,13 +105,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Down Slide Title</div>
             <div className="col-sm-3">
-              <Input
-                value={valDownTitle}
-                onChange={(e) => {
-                  setValDownTitle(e.target.value);
-                }}
-                placeholder="Enter New Value"
-              />
+              <Input placeholder="Enter New Value" ref={valDownTitleRef} />
             </div>
             <div className="col-sm-3">
               <i>{data.subs.title.content}</i>
@@ -162,13 +114,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Down Slide Description</div>
             <div className="col-sm-3">
-              <Input
-                value={valDownDesc}
-                onChange={(e) => {
-                  setValDownDesc(e.target.value);
-                }}
-                placeholder="Enter New Value"
-              />
+              <Input placeholder="Enter New Value" ref={valDownDescRef} />
             </div>
             <div className="col-sm-3">
               <i>{data.subs.desc.content}</i>
