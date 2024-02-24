@@ -36,7 +36,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Slider Title</div>
             <div className="col-sm-3">
-              <Input placeholder="Enter New Value" value={valSliderTitle} />
+              <Input ref={valSliderTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-4">
               <i>{data.slider.title.content}</i>
@@ -45,7 +45,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Slider Description</div>
             <div className="col-sm-3">
-              <Input value={valSliderDesc} placeholder="Enter New Value" />
+              <Input ref={valSliderDesc} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-4">
               <i>{data.slider.desc.content}</i>
@@ -55,7 +55,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Main Muted Title</div>
             <div className="col-sm-3">
-              <Input value={valMainMutedTitle} placeholder="Enter New Value" />
+              <Input ref={valMainMutedTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.mutedTitle.content}</i>
@@ -64,7 +64,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Main Title</div>
             <div className="col-sm-3">
-              <Input value={valMainTitle} placeholder="Enter New Value" />
+              <Input ref={valMainTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.title.content}</i>
@@ -74,7 +74,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">News Muted Title</div>
             <div className="col-sm-3">
-              <Input value={valNewsMutedtitle} placeholder="Enter New Value" />
+              <Input ref={valNewsMutedtitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.mutedTitle.content}</i>
@@ -83,7 +83,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">New Title</div>
             <div className="col-sm-3">
-              <Input value={valNewsTitle} placeholder="Enter New Value" />
+              <Input ref={valNewsTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.main.title.content}</i>
@@ -93,7 +93,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3">
             <div className="col-sm-2">Down Slide Title</div>
             <div className="col-sm-3">
-              <Input value={valDownTitle} placeholder="Enter New Value" />
+              <Input ref={valDownTitle} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.subs.title.content}</i>
@@ -102,7 +102,7 @@ function AdminHome() {
           <div className="row clearfix row-deck mt-3 mb-5">
             <div className="col-sm-2">Down Slide Description</div>
             <div className="col-sm-3">
-              <Input value={valDownDesc} placeholder="Enter New Value" />
+              <Input ref={valDownDesc} placeholder="Enter New Value" />
             </div>
             <div className="col-sm-3">
               <i>{data.subs.desc.content}</i>
