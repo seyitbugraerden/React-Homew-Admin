@@ -114,6 +114,14 @@ function AdminHome() {
             type="primary"
             onClick={() => {
               setOpen(true);
+              console.log(valSliderTitle.current?.input.value);
+              console.log(valSliderDesc.current?.input.value);
+              console.log(valMainMutedTitle.current?.input.value);
+              console.log(valMainTitle.current?.input.value);
+              console.log(valNewsMutedtitle.current?.input.value);
+              console.log(valNewsTitle.current?.input.value);
+              console.log(valDownTitle.current?.input.value);
+              console.log(valDownDesc.current?.input.value);
             }}
           >
             Save
