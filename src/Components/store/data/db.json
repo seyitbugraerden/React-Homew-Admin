@@ -1,37 +1,38 @@
 {
-  "navbarItems":[{ 
-      "id": "Header", 
-      "title": "Header", 
-      "link": "/header", 
-      "priority": 1, 
-      "icon": "fa fa-search", 
-      "externalLink": true 
-    }, 
-    { 
-      "id": "Schedule", 
-      "title": "Schedule", 
-      "link": "/schedule", 
-      "priority": 2, 
-      "icon": "fa fa-search", 
-      "externalLink": false 
-    }, 
-    { 
-      "id": "Teams", 
-      "title": "Teams",
-      "link": "/teams", 
-      "priority": 3,
-      "icon": "fa fa-search", 
-      "externalLink": false
-    }, 
+  "navbarItems": [
     {
-      "id": "Subscription", 
-      "title": "Subscription",
-      "link": "/subscription", 
-      "priority": 4,
-      "icon": "fa fa-search", 
+      "id": "Header",
+      "title": "Header",
+      "link": "/header",
+      "priority": 1,
+      "icon": "fa fa-search",
+      "externalLink": true
+    },
+    {
+      "id": "Schedule",
+      "title": "Schedule",
+      "link": "/schedule",
+      "priority": 2,
+      "icon": "fa fa-search",
       "externalLink": false
-    } ]
-  ,
+    },
+    {
+      "id": "Teams",
+      "title": "Teams",
+      "link": "/teams",
+      "priority": 3,
+      "icon": "fa fa-search",
+      "externalLink": false
+    },
+    {
+      "id": "Subscription",
+      "title": "Subscription",
+      "link": "/subscription",
+      "priority": 4,
+      "icon": "fa fa-search",
+      "externalLink": false
+    }
+  ],
   "headerButton": {
     "id": "headerButton",
     "title": "Contact US!",
@@ -67,16 +68,6 @@
         "link": "/page/ferrari",
         "externalLink": true,
         "img": "https://www.mostlyf1.com/wp-content/uploads/2019/09/Charles-Leclerc-Italy-2019-Podium.jpg"
-      }
-    ]
-  }
-}
-yf1.com/wp-content/uploads/2019/09/Charles-Leclerc-Italy-2019-Podium.jpg"
-      }
-    ]
-  }
-}
-2019/09/Charles-Leclerc-Italy-2019-Podium.jpg"
       }
     ]
   }
