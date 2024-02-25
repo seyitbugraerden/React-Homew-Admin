@@ -1,74 +1,136 @@
 {
+  "headerButton": {
+    "id": "headerButton",
+    "content": "Contact Us"
+  },
   "navbarItems": [
     {
-      "id": "Header",
-      "title": "Header",
-      "link": "/header",
-      "priority": 1,
-      "icon": "fa fa-search",
-      "externalLink": true
+      "id": "Home",
+      "content": "Home"
     },
     {
       "id": "Schedule",
-      "title": "Schedule",
-      "link": "/schedule",
-      "priority": 2,
-      "icon": "fa fa-search",
-      "externalLink": false
+      "content": "Schedule"
     },
     {
       "id": "Teams",
-      "title": "Teams",
-      "link": "/teams",
-      "priority": 3,
-      "icon": "fa fa-search",
-      "externalLink": false
+      "content": "Teams"
     },
     {
       "id": "Subscription",
-      "title": "Subscription",
-      "link": "/subscription",
-      "priority": 4,
-      "icon": "fa fa-search",
-      "externalLink": false
+      "content": "Subscription"
     }
   ],
-  "headerButton": {
-    "id": "headerButton",
-    "title": "Contact US!",
-    "link": "/contact"
+  "logo": {
+    "id": "logo",
+    "content": "https://cdn-3.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg"
   },
-  "mainBanner": {
-    "id": "mainBanner",
-    "title": "Race Day Insights",
-    "content": "Get behind-the-scenes analysis and expert commentary on the latest F1 races.",
-    "img": "https://img3.aksam.com.tr/imgsdisk/2021/04/26/t25_formula-1de-yeni-donem-sp-955.jpg"
+  "sliderImg": {
+    "id": "sliderImg",
+    "content": "https://img3.aksam.com.tr/imgsdisk/2021/04/26/t25_formula-1de-yeni-donem-sp-955.jpg"
   },
-  "mainArea": {
-    "id": "mainArea",
-    "mutedTitle": "WHO IS HERE",
-    "title": "Brand Spotlight: Powerhouses of the Circuit",
-    "items": [
-      {
-        "id": 0,
-        "mutedTitle": "MOST WINNER",
-        "title": "Mercedes-AMG",
-        "content": "Mercedes-AMG Petronas Formula One Team is a powerhouse in Formula 1, renowned for its dominance in the sport's modern era. With cutting-edge technology, top-tier engineering, and a roster of world-class drivers, Mercedes-AMG consistently pushes the boundaries of speed and innovation on the race track.",
-        "buttonName": "Learn More",
-        "link": "/page/mercedes",
-        "externalLink": true,
-        "img": "https://i.pinimg.com/originals/e1/1c/c8/e11cc8ad8bff2641e0076ad00e4beb98.jpg"
-      },
-      {
-        "id": 1,
-        "mutedTitle": "MOST POPULAR",
-        "title": "Scuderia Ferrari",
-        "content": "Ferrari is an iconic name in Formula 1, synonymous with passion, tradition, and success. With a storied history spanning decades, the Scuderia Ferrari team continues to captivate fans worldwide with its distinctive red cars and unwavering pursuit of victory on the race track.",
-        "buttonName": "Learn More",
-        "link": "/page/ferrari",
-        "externalLink": true,
-        "img": "https://www.mostlyf1.com/wp-content/uploads/2019/09/Charles-Leclerc-Italy-2019-Podium.jpg"
-      }
-    ]
+  "sliderTitle": {
+    "id": "sliderTitle",
+    "content": "Race Day Insights"
+  },
+  "sliderDesc": {
+    "id": "sliderDesc",
+    "content": "Get behind-the-scenes analysis and expert commentary on the latest F1 races."
+  },
+  "mainMutedTitle": {
+    "id": "mainMutedTitle",
+    "content": "WHO IS HERE"
+  },
+  "mainTitle": {
+    "id": "mainTitle",
+    "content": "Brand Spotlight: Powerhouses of the Circuit"
+  },
+  "itemOneMuted": {
+    "id": "itemOneMuted",
+    "content": "MOST WINNER"
+  },
+  "itemOneTitle": {
+    "id": "itemOneTitle",
+    "content": "Mercedes-AMG"
+  },
+  "itemOneDesc": {
+    "id": "itemOneDesc",
+    "content": "Mercedes-AMG Petronas Formula One Team is a powerhouse in Formula 1, renowned for its dominance in the sport's modern era. With cutting-edge technology, top-tier engineering, and a roster of world-class drivers, Mercedes-AMG consistently pushes the boundaries of speed and innovation on the race track."
+  },
+  "itemOneImg": {
+    "id": "itemOneImg",
+    "content": "https://i.pinimg.com/originals/e1/1c/c8/e11cc8ad8bff2641e0076ad00e4beb98.jpg"
+  },
+  "itemSecMuted": {
+    "id": "itemSecMuted",
+    "content": "MOST POPULAR"
+  },
+  "itemSecTitle": {
+    "id": "itemSecTitle",
+    "content": "Scuderia Ferrari"
+  },
+  "itemSecDesc": {
+    "id": "itemSecDesc",
+    "content": "Ferrari is an iconic name in Formula 1, synonymous with passion, tradition, and success. With a storied history spanning decades, the Scuderia Ferrari team continues to captivate fans worldwide with its distinctive red cars and unwavering pursuit of victory on the race track."
+  },
+  "itemSecImg": {
+    "id": "itemSecImg",
+    "content": "https://www.mostlyf1.com/wp-content/uploads/2019/09/Charles-Leclerc-Italy-2019-Podium.jpg"
+  },
+  "newsMuted": {
+    "id": "newsMuted",
+    "content": "NEWS"
+  },
+  "newsTitle": {
+    "id": "newsTitle",
+    "content": "Latest News"
+  },
+  "blogOneTitle": {
+    "id": "blogOneTitle",
+    "content": "New Regulations Unveiled for 2024 Season"
+  },
+  "blogOneDate": {
+    "id": "blogOneDate",
+    "content": "JAN 24, 2024"
+  },
+  "blogOneDesc": {
+    "id": "blogOneDesc",
+    "content": "F1 governing body, the FIA, has revealed significant changes to the technical regulations for the 2024 season, aiming to improve racing and reduce costs. These alterations include tweaks to aerodynamics, standardized parts, and sustainability measures."
+  },
+  "blogSecTitle": {
+    "id": "blogSecTitle",
+    "content": "New Regulations Unveiled for 2024 Season"
+  },
+  "blogSecDate": {
+    "id": "blogSecDate",
+    "content": "JAN 24, 2024"
+  },
+  "blogSecDesc": {
+    "id": "blogSecDesc",
+    "content": "F1 governing body, the FIA, has revealed significant changes to the technical regulations for the 2024 season, aiming to improve racing and reduce costs. These alterations include tweaks to aerodynamics, standardized parts, and sustainability measures."
+  },
+  "blogThrTitle": {
+    "id": "blogThrTitle",
+    "content": "New Regulations Unveiled for 2024 Season"
+  },
+  "blogThrDate": {
+    "id": "blogThrDate",
+    "content": "JAN 24, 2024"
+  },
+  "blogThrDesc": {
+    "id": "blogThrDesc",
+    "content": "F1 governing body, the FIA, has revealed significant changes to the technical regulations for the 2024 season, aiming to improve racing and reduce costs. These alterations include tweaks to aerodynamics, standardized parts, and sustainability measures."
+  },
+  "subTitle": {
+    "id": "subTitle",
+    "content": "F1 Insider Access: Your Ticket to Exclusive Race Updates"
+  },
+  "subDesc": {
+    "id": "subDesc",
+    "content": "Subscribe now to unlock premium notifications and in-depth race insights. Get ahead of the curve with insider access to all the action on and off the track!"
+  },
+  "subButton": {
+    "id": "subButton",
+    "content": "SUBSCRIBE NOW"
   }
 }
