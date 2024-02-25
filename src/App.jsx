@@ -1,10 +1,10 @@
 import React from "react";
 // import SpinBox from "./Components/SpinBox";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./Components/pages/Home";
-import Admin from "./Components/pages/Admin";
-import AdminPage from "./Components/pages/AdminPage";
-import Page from "./Components/pages/Page";
+import HomePage from "./Components/pages/User/Home";
+import Admin from "./Components/pages/Admin/Admin";
+import AdminPage from "./Components/pages/Admin/AdminPage";
+import Page from "./Components/pages/User/Page";
 function App() {
   return (
     <>
