@@ -47,6 +47,9 @@ function AdminSidebar() {
                   </Link>
                   <ul>
                     <li>
+                      <Link to="/admin/Nav Items">Nav Items</Link>
+                    </li>
+                    <li>
                       <Link to="/admin/home">Home Page</Link>
                     </li>
                     <li>
