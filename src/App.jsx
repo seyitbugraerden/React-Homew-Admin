@@ -1,5 +1,4 @@
 import React from "react";
-// import SpinBox from "./Components/SpinBox";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./Components/pages/User/Home";
 import Admin from "./Components/pages/Admin/Admin";
@@ -16,7 +15,6 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/admin/:id" element={<AdminPage />} />
       </Routes>
-      {/* <SpinBox /> */}
     </>
   );
 }
