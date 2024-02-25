@@ -5,6 +5,7 @@ import AdminRightBar from "../layouts/AdminRightBar";
 import { Input } from "antd";
 import { useSelector } from "react-redux";
 import { Button, Modal } from "antd";
+import axios from "axios";
 
 function AdminHome() {
   const data = useSelector((state) => state.admin);
@@ -22,6 +23,9 @@ function AdminHome() {
   const valDownDesc = useRef(null);
   const onOk = () => {
     setOpen(false);
+    axios.put("http://localhost:3000/navbarItems/Header", {
+      title: "New",
+    });
   };
 
   return (

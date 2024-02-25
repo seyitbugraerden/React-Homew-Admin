@@ -1,0 +1,153 @@
+{
+  "headerButton": {
+    "id": "headerButton",
+    "content": "Contact Us"
+  },
+  "navbarItems": [
+    {
+      "id": "Home",
+      "content": "Home"
+    },
+    {
+      "id": "Schedule",
+      "content": "Schedule"
+    },
+    {
+      "id": "Teams",
+      "content": "Teams"
+    },
+    {
+      "id": "Subscription",
+      "content": "Subscription"
+    }
+  ],
+  "logo": {
+    "id": "logo",
+    "content": "https://cdn-3.motorsport.com/images/amp/68ey3q40/s1000/f1-abu-dhabi-gp-2017-f1-logo-6614911.jpg"
+  },
+  "slider": {
+    "id": "slider",
+    "img": {
+      "id": "sliderImg",
+      "content": "https://img3.aksam.com.tr/imgsdisk/2021/04/26/t25_formula-1de-yeni-donem-sp-955.jpg"
+    },
+    "title": {
+      "id": "SliderTitle",
+      "content": "Race Day Insights"
+    },
+    "desc": {
+      "id": "sliderDesc",
+      "content": "Get behind-the-scenes analysis and expert commentary on the latest F1 races."
+    }
+  },
+  "main": {
+    "mutedTitle": {
+      "id": "mainMutedTitle",
+      "content": "WHO IS HERE"
+    },
+    "title": {
+      "id": "mainTitle",
+      "content": "Brand Spotlight: Powerhouses of the Circuit"
+    },
+    "partOne": {
+      "id": "mainPartOne",
+      "mutedTitle": {
+        "id": "mainPartOneMutedTitle",
+        "content": "MOST WINNER"
+      },
+      "title": {
+        "id": "mainPartOneTitle",
+        "content": "Mercedes-AMG"
+      },
+      "desc": {
+        "id": "mainPartOneDesc",
+        "content": "Mercedes-AMG Petronas Formula One Team is a powerhouse in Formula 1, renowned for its dominance in the sport's modern era. With cutting-edge technology, top-tier engineering, and a roster of world-class drivers, Mercedes-AMG consistently pushes the boundaries of speed and innovation on the race track."
+      },
+      "img": {
+        "id": "mainPartOneImg",
+        "content": "https://i.pinimg.com/originals/e1/1c/c8/e11cc8ad8bff2641e0076ad00e4beb98.jpg"
+      }
+    },
+    "partSec": {
+      "id": "mainPartSec",
+      "mutedTitle": {
+        "id": "mainPartSecMutedTitle",
+        "content": "MOST POPULAR"
+      },
+      "title": {
+        "id": "mainPartSecTitle",
+        "content": "Scuderia Ferrari"
+      },
+      "desc": {
+        "id": "mainPartSecDesc",
+        "content": "Ferrari is an iconic name in Formula 1, synonymous with passion, tradition, and success. With a storied history spanning decades, the Scuderia Ferrari team continues to captivate fans worldwide with its distinctive red cars and unwavering pursuit of victory on the race track."
+      },
+      "img": {
+        "id": "mainPartSecImg",
+        "content": "https://www.mostlyf1.com/wp-content/uploads/2019/09/Charles-Leclerc-Italy-2019-Podium.jpg"
+      }
+    }
+  },
+  "news": {
+    "id": "news",
+    "mutedTitle": {
+      "id": "newsMutedTitle",
+      "content": "NEWS"
+    },
+    "title": {
+      "id": "newsTitle",
+      "content": "Latest News"
+    },
+    "blogOne": {
+      "id": "blogOne",
+      "title": {
+        "id": "blogOneTitle",
+        "content": "New Regulations Unveiled for 2024 Season"
+      },
+      "date": "JAN 24, 2024",
+      "desc": {
+        "id": "blogOneDesc",
+        "content": "F1 governing body, the FIA, has revealed significant changes to the technical regulations for the 2024 season, aiming to improve racing and reduce costs. These alterations include tweaks to aerodynamics, standardized parts, and sustainability measures."
+      }
+    },
+    "blogSec": {
+      "id": "blogSec",
+      "title": {
+        "id": "blogSecTitle",
+        "content": "Driver Transfers Shake Up Grid"
+      },
+      "date": "JAN 21, 2024",
+      "desc": {
+        "id": "blogSecDesc",
+        "content": "Several high-profile driver transfers have occurred ahead of the 2024 season, with notable moves including Lewis Hamilton's switch to Aston Martin and Max Verstappen joining Ferrari. These changes promise to add excitement and unpredictability to the upcoming championship."
+      }
+    },
+    "blogThr": {
+      "id": "blogThr",
+      "title": {
+        "id": "blogThrTitle",
+        "content": "Expansion Plans for F1 Calendar"
+      },
+      "date": "JAN 21, 2024",
+      "desc": {
+        "id": "blogThrDesc",
+        "content": "Formula 1 is exploring new venues and markets for its race calendar, with discussions underway to potentially add races in countries like Indonesia and Qatar. These expansion plans aim to broaden the sport's global footprint and attract new fans."
+      }
+    }
+  },
+  "subs": {
+    "id": "subs",
+    "title": {
+      "id": "subsTitle",
+      "content": "F1 Insider Access: Your Ticket to Exclusive Race Updates"
+    },
+    "desc": {
+      "id": "subsDesc",
+      "content": "Subscribe now to unlock premium notifications and in-depth race insights. Get ahead of the curve with insider access to all the action on and off the track!"
+    },
+    "subButton": {
+      "id": "subButton",
+      "content": "SUBSCRIBE NOW"
+    }
+  }
+}

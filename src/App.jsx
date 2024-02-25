@@ -14,7 +14,7 @@ function App() {
         <Route path="/:id" element={<Page />} />
         <Route path="*" element={<HomePage />} />
         <Route path="/admin" element={<AdminPage />} />
-        <Route path="/admin/home" element={<AdminHome />} />
+        <Route path="/admin/:id" element={<AdminHome />} />
       </Routes>
       {/* <SpinBox /> */}
     </>
