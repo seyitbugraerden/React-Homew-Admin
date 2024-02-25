@@ -2,10 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 function Footer() {
-  const subTitle = useSelector((state) => state.admin.subTitle.content);
-  const subDesc = useSelector((state) => state.admin.subDesc.content);
-  const subButton = useSelector((state) => state.admin.subButton.content);
-  const data = useSelector((state) => state.admin.data);
+  const data = useSelector((state) => state.admin);
   return (
     <>
       <div
@@ -25,11 +22,11 @@ function Footer() {
             <div>
               <div className="cta-text">
                 <div className="heading-jumbo-small">
-                  {subTitle}
+                  {data.subTitle.content}
                   <br />
                 </div>
                 <div className="paragraph-bigger cc-bigger-light">
-                  {subDesc}
+                  {data.subDesc.content}
                   <br />
                 </div>
               </div>
@@ -38,7 +35,7 @@ function Footer() {
                 className="button cc-jumbo-button w-inline-block"
                 title="footer button"
               >
-                <div>{subButton}</div>
+                <div>{data.subButton.content}</div>
               </a>
             </div>
           </div>

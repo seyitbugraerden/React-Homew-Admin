@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../App.css";
 import { useSelector } from "react-redux";
+import "../../../App.css";
 
 function Header() {
-  const navItem = useSelector((state) => state.admin.navbarItems);
-  const logo = useSelector((state) => state.admin.logo.content);
-  const headerButton = useSelector((state) => state.admin.headerButton.content);
-
+  const data = useSelector((state) => state.admin);
+  console.log(data);
   return (
     <div
       data-collapse="medium"
@@ -24,11 +22,16 @@ function Header() {
           aria-current="page"
           className="logo-link w-nav-brand w--current"
         >
-          <img src={logo} width="108" alt="" className="logo-image" />
+          <img
+            width="108"
+            alt=""
+            className="logo-image"
+            src={data.logo.content}
+          />
         </Link>
         <div className="menu">
           <nav role="navigation" className="navigation-items w-nav-menu">
-            {navItem.map((item, index) => (
+            {data.navbarItems.map((item, index) => (
               <Link
                 to={`/${item.content.toLowerCase()}`}
                 className="navigation-item w-nav-link"
@@ -53,7 +56,7 @@ function Header() {
           href="mailto:mail@business.com?subject=You&#x27;ve%20got%20mail!"
           className="button cc-contact-us w-inline-block"
         >
-          <div>{headerButton}</div>
+          <div>{data.headerButton.content}</div>
         </a>
       </div>
     </div>
