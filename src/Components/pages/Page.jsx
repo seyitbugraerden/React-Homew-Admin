@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../layouts/Header";
-import Footer from "../layouts/Footer";
+import Header from "../layouts/User/Header";
+import Footer from "../layouts/User/Footer";
 import { useParams } from "react-router-dom";
 
 function Page() {

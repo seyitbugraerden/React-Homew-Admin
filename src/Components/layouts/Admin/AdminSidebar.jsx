@@ -50,13 +50,13 @@ function AdminSidebar() {
                       <Link to="/admin/home">Home Page</Link>
                     </li>
                     <li>
-                      <a>Schedule</a>
+                      <Link to="/admin/schedule">Schedule</Link>
                     </li>
                     <li>
-                      <a>Teams</a>
+                      <Link to="/admin/teams">Teams</Link>
                     </li>
                     <li>
-                      <a>Subscription</a>
+                      <Link to="/admin/subscription">Subscription</Link>
                     </li>
                   </ul>
                 </li>

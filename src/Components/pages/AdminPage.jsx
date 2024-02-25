@@ -2,18 +2,17 @@ import React from "react";
 import AdminNavbar from "../layouts/Admin/AdminNavbar";
 import AdminSidebar from "../layouts/Admin/AdminSidebar";
 import AdminRightBar from "../layouts/Admin/AdminRightBar";
-import AdminMain from "../layouts/Admin/AdminMain";
-import "../../Admin.css";
+import AdminInputArea from "../layouts/Admin/AdminInputArea";
 
-function Admin() {
+function AdminHome() {
   return (
     <>
       <AdminNavbar />
       <AdminSidebar />
       <AdminRightBar />
-      <AdminMain />
+      <AdminInputArea />
     </>
   );
 }
 
-export default Admin;
+export default AdminHome;

@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../layouts/Header";
-import Slider from "../layouts/Slider";
-import News from "../layouts/News";
-import Footer from "../layouts/Footer";
+import Header from "../layouts/User/Header";
+import Slider from "../layouts/User/Slider";
+import News from "../layouts/User/News";
+import Footer from "../layouts/User/Footer";
 
 function Home() {
   return (
