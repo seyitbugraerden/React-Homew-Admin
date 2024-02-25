@@ -132,5 +132,9 @@
   "subButton": {
     "id": "subButton",
     "content": "SUBSCRIBE NOW"
+  },
+  "subscription": {
+    "id": "store",
+    "content": 31
   }
 }

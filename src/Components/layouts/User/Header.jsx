@@ -5,7 +5,6 @@ import "../../../App.css";
 
 function Header() {
   const data = useSelector((state) => state.admin);
-  console.log(data);
   return (
     <div
       data-collapse="medium"
