@@ -1,7 +1,6 @@
 import { Input } from "antd";
 import React from "react";
 import { Button, Modal } from "antd";
-import { useParams } from "react-router-dom";
 
 function AdminInputArea() {
   return (
